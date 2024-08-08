@@ -70,7 +70,7 @@ const addEmployee = async (req, res) => {
     // Save the updated company document
     await companyObj.save();
 
-    const newAadhaar = new Aadhaar({ account });
+    const newAadhaar = new Aadhaar({ account, companyName });
     await newAadhaar.save();
 
     res.status(200).json({
@@ -137,6 +137,9 @@ const addEmployeeByCsv = async ({ body }) => {
 
     // Save the updated company document
     await companyObj.save();
+
+    const newAadhaar = new Aadhaar({ account, companyName });
+    await newAadhaar.save();
   } catch (err) {
     console.log(err);
   }
@@ -146,7 +149,7 @@ const bulkEmployeesByCsv = async (req, res) => {
   try {
     const companyName = req.user.companyName;
     const data = req.body.data; // Assume this is an array of employee data
-    console.log(data);
+
     // Create an array of promises for adding employees
     const promises = data.map((employeeData) => {
       const {
@@ -158,7 +161,7 @@ const bulkEmployeesByCsv = async (req, res) => {
         department,
         designation,
       } = employeeData;
-      
+
       return addEmployeeByCsv({
         body: {
           account,
@@ -232,7 +235,8 @@ const removeEmployee = async (req, res) => {
 
     await companyObj.save();
     await Employee.deleteOne({ account });
-
+    await Aadhaar.deleteOne({ account, companyName });
+    
     res.status(200).json({
       status: "success",
       message: "Employee deleted",

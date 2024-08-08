@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const aadhaarSchema = new mongoose.Schema({
+  companyName: { type: String, required: true },
   account: {
     type: String,
     required: true,
-    unique: true,
   },
   status: {
     type: Boolean,
@@ -13,6 +13,6 @@ const aadhaarSchema = new mongoose.Schema({
   },
 });
 
-const Aadhaar = mongoose.model('Aadhaar', aadhaarSchema);
+const Aadhaar = mongoose.model("Aadhaar", aadhaarSchema);
 
 module.exports = Aadhaar;
