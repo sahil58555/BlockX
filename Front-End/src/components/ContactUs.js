@@ -5,6 +5,7 @@ import Instagram from "../components/images/Instagram.png";
 import X from "../components/images/X.png";
 import Linkedin from "../components/images/Linkedin.png";
 import { useNavigate } from "react-router-dom";
+import { BlockX } from "../constant";
 
 const ContactUs = () => {
   const navigate = useNavigate();
@@ -209,7 +210,7 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
               Feel free to reach out to us through any of the following methods:
             </p>
             <ul className="contact-methods">
-              <li>Email: support@blockpay.com</li>
+              <li>Email: support@blockx.com</li>
               <li>Phone: +1 234 567 890</li>
               <li>Address: 1234 Blockchain Blvd, Cryptoville, CY 56789</li>
             </ul>
@@ -247,7 +248,7 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
       </div>
       <footer>
         <div className="footerhome">
-          <div className="logohome">BlockPay</div>
+          <div className="logohome">{BlockX}</div>
 
           <nav>
             <a href="about-us">About</a>
@@ -272,7 +273,7 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
         <br />
         <br />
         <div className="copyrighthome">
-          <h6>© 2024 BlockPay Limited. All Rights Reserved.</h6>
+          <h6>© 2024 BlockX Limited. All Rights Reserved.</h6>
           <h5 className="policyhome"> Privacy Policy . Terms & Conditions</h5>
         </div>
       </footer>

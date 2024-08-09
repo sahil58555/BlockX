@@ -6,6 +6,7 @@ import Alert from "@mui/material/Alert";
 import LinearProgress from "@mui/material/LinearProgress";
 import domain from "../domain";
 import axios from "axios";
+import { BlockX } from "../constant";
 
 const AddEmployee = () => {
   const navigate = useNavigate();
@@ -210,7 +211,7 @@ const AddEmployee = () => {
         />
         <div className="top-bar">
           <div className="brand" onClick={() => navigate("/")}>
-            BlockPay
+            {BlockX}
           </div>
         </div>
         <div className="register-container">

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import myVector from "./Vector.svg";
+import { BlockX } from "./constant";
 
 const UpdateForm = () => {
   return (
@@ -159,7 +160,7 @@ p {
           className="background-vector"
         />
         <div className="top-bar">
-          <div className="brand">BlockPay</div>
+          <div className="brand">{BlockX}</div>
         </div>
         <div className="register-container">
           <h1>Enter employee details</h1>

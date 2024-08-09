@@ -4,6 +4,7 @@ import Instagram from "../components/images/Instagram.png";
 import X from "../components/images/X.png";
 import Linkedin from "../components/images/Linkedin.png";
 import { useNavigate } from "react-router-dom";
+import { BlockX } from "../constant";
 
 const Aboutus = () => {
   const navigate = useNavigate();
@@ -147,12 +148,12 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
           <button className="backtohome" onClick={() => navigate("/")}>
             Home
           </button>
-          <h1 className="header-title">About Blockpay</h1>
+          <h1 className="header-title">About BlockX</h1>
         </header>
         <section className="content">
           <h2 className="section-title">Our Vision</h2>
           <p className="section-paragraph">
-            At BlockPay, we envision a world where payroll processing is as
+            At BlockX, we envision a world where payroll processing is as
             seamless and efficient as possible. Leveraging the power of
             blockchain technology, we aim to eliminate the barriers and
             inefficiencies that plague traditional payroll systems. Our goal is
@@ -168,9 +169,9 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
             By integrating blockchain technology, we create a trusted
             environment where every transaction is immutable and verifiable.
           </p>
-          <h2 className="section-title">Why Choose BlockPay?</h2>
+          <h2 className="section-title">Why Choose BlockX?</h2>
           <p className="section-paragraph">
-            Choosing BlockPay means choosing a future-proof payroll solution.
+            Choosing BlockX means choosing a future-proof payroll solution.
             Our platform offers several key advantages:
             <ul>
               <li>
@@ -190,14 +191,14 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
                 business to allocate resources more effectively.
               </li>
               <li>
-                Seamlessly integrate BlockPay with your existing systems,
+                Seamlessly integrate BlockX with your existing systems,
                 ensuring a smooth transition and minimal disruption.
               </li>
             </ul>
           </p>
           <h2 className="section-title">Our Team</h2>
           <p className="section-paragraph">
-            BlockPay is driven by a diverse team of experts in blockchain
+            BlockX is driven by a diverse team of experts in blockchain
             technology, finance, and payroll management. Our collective
             experience and dedication enable us to deliver cutting-edge
             solutions that meet the evolving needs of businesses worldwide. We
@@ -207,7 +208,7 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
           <h2 className="section-title">Contact Us</h2>
           <p className="section-paragraph">
             We would love to hear from you! Whether you have questions about our
-            platform, need support, or want to learn more about how BlockPay can
+            platform, need support, or want to learn more about how BlockX can
             benefit your business, feel free to reach out. Contact us through
             our support email, live chat, or follow us on our social media
             channels for the latest updates.
@@ -219,7 +220,7 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
       </div>
       <footer>
         <div className="footerhome">
-          <div className="logohome">BlockPay</div>
+          <div className="logohome">{BlockX}</div>
 
           <nav>
             <a href="/features">Features</a>
@@ -242,7 +243,7 @@ background: linear-gradient(135deg, #0e1520 10%, #131b2b 50%, #182335 100%);
         <br />
         <br />
         <div className="copyrighthome">
-          <h6>© 2024 BlockPay Limited. All Rights Reserved.</h6>
+          <h6>© 2024 BlockX Limited. All Rights Reserved.</h6>
           <h5 className="policyhome"> Privacy Policy . Terms & Conditions</h5>
         </div>
       </footer>

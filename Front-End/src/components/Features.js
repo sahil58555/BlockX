@@ -4,6 +4,7 @@ import Instagram from "../components/images/Instagram.png";
 import X from "../components/images/X.png";
 import Linkedin from "../components/images/Linkedin.png";
 import { useNavigate } from "react-router-dom";
+import { BlockX } from "../constant";
 
 const Features = () => {
   const navigate = useNavigate();
@@ -133,14 +134,14 @@ const Features = () => {
         </button>
 
         <header className="header">
-          <h1 className="header-title">Features of Blockpay</h1>
+          <h1 className="header-title">Features of BlockX</h1>
         </header>
         <section className="content">
           <div className="feature-item">
             <h2 className="feature-title">Real-Time Transactions</h2>
             <p className="feature-paragraph">
               Experience the speed and efficiency of real-time transactions.
-              With Blockpay, payments are processed instantly, ensuring that
+              With BlockX, payments are processed instantly, ensuring that
               your workforce receives their wages without any delays.
             </p>
           </div>
@@ -155,7 +156,7 @@ const Features = () => {
           <div className="feature-item">
             <h2 className="feature-title">Effortless Compliance</h2>
             <p className="feature-paragraph">
-              Blockpay simplifies compliance with regulatory standards. Our
+              BlockX simplifies compliance with regulatory standards. Our
               platform is designed to ensure that all transactions meet legal
               requirements, reducing the burden on your payroll department.
             </p>
@@ -163,7 +164,7 @@ const Features = () => {
           <div className="feature-item">
             <h2 className="feature-title">Global Accessibility</h2>
             <p className="feature-paragraph">
-              No matter where your employees are located, Blockpay provides
+              No matter where your employees are located, BlockX provides
               global accessibility. Cross-border payments are made easy,
               ensuring that distance is no barrier to timely payroll processing.
             </p>
@@ -184,7 +185,7 @@ const Features = () => {
       </div>
       <footer>
         <div className="footerhome">
-          <div className="logohome">BlockPay</div>
+          <div className="logohome">{BlockX}</div>
 
           <nav>
             <a href="/about-us">About</a>
@@ -208,7 +209,7 @@ const Features = () => {
         <br />
         <br />
         <div className="copyrighthome">
-          <h6>© 2024 BlockPay Limited. All Rights Reserved.</h6>
+          <h6>© 2024 BlockX Limited. All Rights Reserved.</h6>
           <h5 className="policyhome"> Privacy Policy . Terms & Conditions</h5>
         </div>
       </footer>

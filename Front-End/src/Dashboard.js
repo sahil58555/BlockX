@@ -36,7 +36,7 @@ const Dashboard = ({ totalSalary }) => {
         <div className="inner">
           <div>Total salary to be paid</div>
           <div className="deposit">
-            <div className="amount">{totalSalary}</div>
+            <div className="amount">{totalSalary.split(" ")[0] + " " + "MATIC"}</div>
             <div className="dollar"></div>
           </div>
 

@@ -236,7 +236,7 @@ const removeEmployee = async (req, res) => {
     await companyObj.save();
     await Employee.deleteOne({ account });
     await Aadhaar.deleteOne({ account, companyName });
-    
+
     res.status(200).json({
       status: "success",
       message: "Employee deleted",
@@ -286,7 +286,7 @@ const totalSalaryToBePaid = async (req, res) => {
     );
     res.status(200).json({
       status: "success",
-      data: `${totalSalary.toString()} ether`,
+      data: `${totalSalary.toString()} MATIC`,
     });
   } catch (err) {
     res.status(404).json({

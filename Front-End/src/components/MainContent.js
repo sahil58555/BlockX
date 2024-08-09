@@ -20,6 +20,7 @@ import { logout } from "../utils/sidebarClick";
 import { useNavigate } from "react-router-dom";
 import DocumentsCenter from "./DocumentsCenter";
 import TransactionHistory from "./TransactionHistory";
+import { BlockX } from "../constant";
 
 const MainContent = ({ logo, children, salaries, salary, account }) => {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ const MainContent = ({ logo, children, salaries, salary, account }) => {
     <main className="main-content">
       <header className="main-header">
         <div className="logohome" onClick={() => navigate("/")}>
-          BlockPay
+          {BlockX}
         </div>
         <div className="user-profile">
           <img
@@ -73,7 +74,7 @@ const MainContent = ({ logo, children, salaries, salary, account }) => {
               alt="Blue Dollar Icon"
               className="card-icon"
             />
-            <p>{`${getTotalSalary()} ether`}</p>
+            <p>{`${getTotalSalary()} MATIC`}</p>
             <div className="chart">
               <img src={BlueLine} alt="Blue Line Chart" />
             </div>
@@ -81,7 +82,7 @@ const MainContent = ({ logo, children, salaries, salary, account }) => {
           <div className="card">
             <h2>Total Bonus</h2>
             <img src={RedDollar} alt="Red Dollar Icon" className="card-icon" />
-            <p>0 ether</p>
+            <p>0 MATIC</p>
             <div className="chart">
               <img src={RedLine} alt="Red Line Chart" />
             </div>
@@ -122,7 +123,7 @@ const MainContent = ({ logo, children, salaries, salary, account }) => {
               alt="Check List Icons"
               className="card-icons"
             />
-            <p>{`${Number(salary) / scale} ether`}</p>
+            <p>{`${Number(salary) / scale} MATIC`}</p>
             <h2>Employee Account</h2>
             <p>{account}</p>
           </div>

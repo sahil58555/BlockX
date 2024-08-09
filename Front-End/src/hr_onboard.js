@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 const HrDashboard = () => {
   const navigate = useNavigate();
   const [selected, setSelected] = useState("Dashboard");
-  const [totalSalary, setTotalSalary] = useState("0");
+  const [totalSalary, setTotalSalary] = useState("0 MATIC");
 
   useEffect(() => {
     const fetchTotalSalary = async () => {

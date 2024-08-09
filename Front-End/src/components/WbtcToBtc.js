@@ -6,6 +6,7 @@ import myVector from "../Vector.svg";
 import { useNavigate } from "react-router-dom";
 import domain from "../domain";
 import axios from "axios";
+import { BlockX } from "../constant";
 
 const defaultValues = {
   btc: "",
@@ -219,7 +220,7 @@ const AddEmployee = () => {
         />
         <div className="top-bar">
           <div className="brand" onClick={() => navigate("/")}>
-            BlockPay
+            {BlockX}
           </div>
         </div>
         <div className="register-container">

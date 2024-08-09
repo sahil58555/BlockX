@@ -58,6 +58,7 @@ import domain from "../domain";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../utils/sidebarClick";
+import { BlockX } from "../constant";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -186,7 +187,7 @@ const MainContent = ({ logo, children }) => {
     <main className="main-content">
       <header className="main-header">
         <div className="logohome" onClick={() => navigate("/")}>
-          BlockPay
+          {BlockX}
         </div>
         <div className="user-profile">
           <img

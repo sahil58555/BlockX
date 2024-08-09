@@ -7,6 +7,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import domain from "./domain";
 import axios from "axios";
 import { anonAadhaarDomain } from "./domain";
+import { BlockX } from "./constant";
 
 const RegisterCompany = () => {
   const [formValues, setFormValues] = useState({
@@ -252,7 +253,7 @@ p {
         />
         <div className="top-bar">
           <div className="brand" onClick={() => navigate("/")}>
-            BlockPay
+            {BlockX}
           </div>
         </div>
         <div className="register-container">

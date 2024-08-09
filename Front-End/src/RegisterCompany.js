@@ -5,6 +5,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import domain from "./domain";
+import { BlockX } from "./constant";
 
 const RegisterCompany = () => {
   const [formValues, setFormValues] = useState({
@@ -211,7 +212,7 @@ const RegisterCompany = () => {
         />
         <div className="top-bar">
           <div className="brand" onClick={() => navigate("/")}>
-            BlockPay
+            {BlockX}
           </div>
         </div>
         <div className="register-container">

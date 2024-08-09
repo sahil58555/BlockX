@@ -16,7 +16,7 @@ const TransactionHistory = ({ salaries, account }) => {
                 alt={"image"}
                 className="transaction-icon"
               />
-              <div className="transaction-amount">{`${salary / scale} ether`}</div>
+              <div className="transaction-amount">{`${salary / scale} MATIC`}</div>
             </div>
             <div className="transaction-id">{account}</div>
             <div className="transaction-date">{"20/8/23"}</div>

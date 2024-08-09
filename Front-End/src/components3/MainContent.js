@@ -17,6 +17,7 @@ import axios from "axios";
 import { logout } from "../utils/sidebarClick";
 import getRandomInt from "../utils/randomno";
 import CSVReader from "react-csv-reader";
+import { BlockX } from "../constant";
 
 const MainContent = ({ logo, children }) => {
   const navigate = useNavigate();
@@ -126,7 +127,7 @@ const MainContent = ({ logo, children }) => {
     <main className="main-content">
       <header className="main-header">
         <div className="logohome" onClick={() => navigate("/")}>
-          BlockPay
+          {BlockX}
         </div>
         <div className="user-profile">
           <img

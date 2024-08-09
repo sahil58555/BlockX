@@ -19,6 +19,7 @@ import settingsIcon from "../icons/settings.svg";
 import notificationIcon from "../icons/notification.svg";
 import domain from "../domain";
 import axios from "axios";
+import { BlockX } from "../constant";
 const MainContent = ({ employee }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({
@@ -124,7 +125,7 @@ const MainContent = ({ employee }) => {
   return (
     <main className="main-content">
       <header className="main-header">
-        <div className="logohome">BlockPay</div>
+        <div className="logohome">{BlockX}</div>
         <div className="user-profile">
           <img
             src={settingsIcon}

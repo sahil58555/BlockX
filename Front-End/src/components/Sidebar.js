@@ -17,7 +17,7 @@ import pagesIcon from "../icons/Pages.svg";
 const icons = {
   Dashboard: dashboardIcon,
   "Employees": statusIcon,
-  "Core HR": hrIcon,
+  "Fun Game": hrIcon,
   Finance: financeIcon,
   Tasks: tasksIcon,
   Performance: performanceIcon,
@@ -40,7 +40,7 @@ const Sidebar = ({ selected, handleItemClick }) => {
           {[
             "Dashboard",
             "Employees",
-            "Core HR",
+            "Fun Game",
             "Finance",
             "Tasks",
             "Performance",

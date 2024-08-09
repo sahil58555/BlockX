@@ -18,6 +18,7 @@ import downredarrow from "../icons/downredarrow.svg";
 import notificationIcon from "../icons/notification.svg";
 import { logout } from "../utils/sidebarClick";
 import { useNavigate } from "react-router-dom";
+import { BlockX } from "../constant";
 
 const Content = ({ logo, children, name }) => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Content = ({ logo, children, name }) => {
     <main className="main-content">
       <header className="main-header">
         <div className="logohome" onClick={() => navigate("/")}>
-          BlockPay
+          {BlockX}
         </div>
         <div className="user-profile">
           <img
