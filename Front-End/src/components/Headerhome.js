@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image5 from "./images/logoblockpay.svg";
+import image5 from "./images/BlockX.png";
 
 const Header = () => {
   return (
     <headerhome>
       <div className="logohome">
-        <img src={image5} alt="Logo" />
+        <img src={image5} style={{ width: "215px" }} alt="Logo" />
       </div>
       <nav>
         <ul>

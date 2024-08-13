@@ -10,7 +10,10 @@ const handleItemClick = (item, setSelected, navigate) => {
   } else if (item === "Dashboard") {
     navigate("/hr-dashboard");
   } else if (item === "Fun Game") {
-    window.location.href = "https://flip-the-beats-node-js-version-frontend.onrender.com/"
+    window.location.href =
+      "https://flip-the-beats-node-js-version-frontend.onrender.com/";
+  } else if (item === "Swap") {
+    window.location.href = "https://onramp.money/main/sell/?appId=1";
   }
   setSelected(item);
 };
