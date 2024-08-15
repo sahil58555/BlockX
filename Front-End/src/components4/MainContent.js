@@ -218,12 +218,18 @@ const MainContent = ({ logo, children }) => {
         <div className="Flexx">
           <div className="balance-sectionFinance">
             <div className="balance-headerFinance">
-              <h2>Total Balance</h2>
+              <h2 style={{ paddingTop: "20px" }}>Total Balance</h2>
               <button
                 className="add-deposit-buttonFinance"
                 onClick={() => setOpen(true)}
               >
                 Add Deposit
+              </button>
+              <button
+                className="add-deposit-buttonFinance"
+                onClick={() => navigate("/btc-to-wbtc")}
+              >
+                Swap
               </button>
               <Dialog
                 open={open}

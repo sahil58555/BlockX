@@ -12,7 +12,7 @@ const handleItemClick = (item, setSelected, navigate) => {
   } else if (item === "Fun Game") {
     window.location.href =
       "https://flip-the-beats-node-js-version-frontend.onrender.com/";
-  } else if (item === "Swap") {
+  } else if (item === "Convert to Fiat") {
     window.location.href = "https://onramp.money/main/sell/?appId=1";
   }
   setSelected(item);
